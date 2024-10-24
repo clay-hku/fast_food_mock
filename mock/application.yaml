@@ -1,0 +1,18 @@
+spring:
+  profiles:
+    active: common
+  datasource:
+    # 如果不是MySQL数据库，可以直接替换url变量
+    # url: 'jdbc:mysql://host:3306/database?useSSL=false&allowPublicKeyRetrieval=true&rewriteBatchedStatements=true'
+    host: 'hadoop102'
+    database: 'fast_food'
+    username: 'root'
+    password: '000000'
+
+mock:
+  # 模拟数据生成的起始日期
+  date: '2023-06-05'
+  # 生成数据量参数，这个数越大，一次生成数据越多，同时写入数据库速度越慢
+  enthusiasm: 1
+  # 一次生成几天数据
+  days: 1
